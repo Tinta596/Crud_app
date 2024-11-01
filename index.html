@@ -9,34 +9,35 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 20px;
-            background: linear-gradient(135deg, #2c3e50, #34495e); /* Degradado oscuro */
-            color: #ecf0f1; /* Color claro para el texto */
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            color: #ecf0f1;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh; /* Altura de la ventana */
+            height: 100vh;
         }
 
         h1 {
             margin-bottom: 20px;
             text-align: center;
-            color: #e74c3c; /* Rojo oscuro para el encabezado */
+            color: #e74c3c;
         }
 
-        button {
-            background-color: #e74c3c; /* Botón rojo */
+        .button {
+            background-color: #e74c3c;
             color: white;
             border: none;
             padding: 10px 20px;
             margin: 10px;
             cursor: pointer;
-            transition: background-color 0.3s ease; /* Transición suave */
+            text-decoration: none;
+            transition: background-color 0.3s ease;
             border-radius: 5px;
         }
 
-        button:hover {
-            background-color: #c0392b; /* Rojo más oscuro al pasar el mouse */
+        .button:hover {
+            background-color: #c0392b;
         }
 
         .container {
@@ -47,9 +48,10 @@
 <body>
     <div class="container">
         <h1>Bienvenido al Sistema CRUD</h1>
-        <button onclick="window.location.href='Crud_clientes.php'">Gestión de Clientes</button>
-        <button onclick="window.location.href='Crud_proveedores.php'">Gestión de Proveedores</button>
-        <button onclick="window.location.href='Crud_productos.php'">Gestión de Productos</button>
+        <a href="Crud_clientes.php" class="button">Gestión de Clientes</a>
+        <a href="Crud_proveedores.php" class="button">Gestión de Proveedores</a>
+        <a href="Crud_productos.php" class="button">Gestión de Productos</a>
     </div>
 </body>
 </html>
+
